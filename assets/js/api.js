@@ -12,7 +12,7 @@ SITE = `${DOMAIN}/wp-json/wc/v2/products`;
 
 function getSiteData(){
 
-    let div_site = document.getElementById("site");
+    let div_slides = document.getElementById("slides");
     let div_posts = document.getElementById("posts");
     fetch(SITE,{
         headers: new Headers({
@@ -25,11 +25,27 @@ function getSiteData(){
         console.log(json);
         var htmlResponse = ""
         json.forEach(resultado => {
-           htmlResponse += `
-            <li class="glide__slide"><img src="${resultado.images[0].src}" alt=""><br><p>"${resultado.name}"</p></li>
-        `;
+            if (resultado.name) {
+                htmlResponse += `
+                <li class="glide__slide"><img src="${resultado.images[0].src}" alt=""><br><p>"${resultado.name}"</p></li>
+                `;
+            }
         })
-        div_site.innerHTML = htmlResponse;    
+        div_slides.innerHTML = htmlResponse;  
+        var glide = new Glide('#intro', {
+            type: 'carousel',
+            perView: 3,
+            focusAt: 'center',
+            breakpoints: {
+                800: {
+                    perView: 2
+                },
+                480: {
+                    perView: 1
+                }
+            }
+        })
+        glide.mount()  
     })
 
     .catch(err => {

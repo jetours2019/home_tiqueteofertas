@@ -5,7 +5,7 @@
 }
 
 .c-encabezado{
-    background: url(bg.jpg);
+    background: url(../img/bg.jpg);
     background-size: cover;
     background-position: bottom;
     min-height: 90vh;
