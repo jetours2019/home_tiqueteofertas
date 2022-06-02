@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
-    <!-- Optional Theme Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
+    
 
 
 </head>
@@ -39,56 +38,38 @@
                         <a href="#">Gestiona tu reserva</a>
                     </div>
                     <div class="c-top-redes">
-                        <a href="#" class="c-ico-face"><img src="assets/img/ico-facebook.svg" alt=""></a>
-                        <a href="#" class="c-ico-face"><img src="assets/img/ico-insta.svg" alt=""></a>
-                        <a href="#" class="c-ico-face"><img src="assets/img/ico-youtube.svg" alt=""></a>
+                        <a href="#" class="c-ico-face"><img src="assets/img/ico-facebook_1.svg" alt=""></a>
+                        <a href="#" class="c-ico-face"><img src="assets/img/ico-insta_1.svg" alt=""></a>
+                        <a href="#" class="c-ico-face"><img src="assets/img/ico-youtube_1.svg" alt=""></a>
                     </div>
                 </div>
                 <!--Fin content-->
             </div>
 
-            <div class="c-top-nav">
+            <div class="c-top-nav" id="c-top-nav">
                 <div class="c-content">
                     <div class="c-logo">
-                        <a href="#"><img src="assets/img/logo-tiquete-ofertas.svg" alt=""></a>
+                        <a href="#"><img  id="c-logo-img" src="assets/img/logo-tiquete-ofertas.svg" alt=""></a>
                     </div>
-                    <div class="c-menu">
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/ico-vuelos.svg" alt="">
-                                <span>Vuelos</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/ico-paquetes.svg" alt="">
-                                <span>Paquetes</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/ico-vuelosplus.svg" alt="">
-                                <span>Vuelos + Hotel</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/ico-circuito.svg" alt="">
-                                <span>Circuitos</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/ico-ofertas.svg" alt="">
-                                <span>Ofertas</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/ico-cruceros.svg" alt="">
-                                <span>Cruceros</span>
-                            </a>
-                        </li>
+                    <div class="c-menu-movil" id="c-menu-movil">
+                        <a >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </a>
+                    </div>   
+                    <div class="c-menu" id="c-menu">
+                        <li> <a href="#"> <span> <img id="c-logo-1" src="assets/img/ico-vuelos.svg" alt=""> </span>  <span>Vuelos</span> </a>   </li>
+                        <li> <a href="#"> <span> <img id="c-logo-2" src="assets/img/ico-paquetes.svg" alt=""> </span>  <span>Paquetes</span> </a>   </li>
+                        <li> <a href="#"> <span> <img id="c-logo-3" src="assets/img/ico-vuelosplus.svg" alt=""> </span>  <span>Vuelos + Hotel</span> </a>   </li>
+                        <li> <a href="#"> <span> <img id="c-logo-4" src="assets/img/ico-circuito.svg" alt=""> </span>  <span>Circuitos</span> </a>   </li>
+                        <li> <a href="#"> <span> <img id="c-logo-5" src="assets/img/ico-ofertas.svg" alt=""> </span>  <span>Ofertas</span> </a>   </li>
+                        <li> <a href="#"> <span> <img id="c-logo-6" src="assets/img/ico-cruceros.svg" alt=""> </span>  <span>Cruceros</span> </a>   </li>
+                        <div id="secMovilMenu">
+                            <div id="c-menu-movil2">
+                                Cerrar
+                            </div>
+                        </div>
                     </div>
                     <div class="c-llamada">
                         <a href="#">Llámanos (602) 4896798</a>
@@ -101,8 +82,9 @@
                     <h1>SOMOS LOS REYES DE LAS OFERTAS</h1>
                     <p>Tenemos los mejores destinos</p>
 
-                    <div style="background: white;border-radius: 8px;padding: 22px;min-height: 165px;margin: 10px 0px;">
-                        MOTOR DE BUSQUEDA</div>
+                    <div class="c-motor" >
+                        MOTOR DE BUSQUEDA
+                    </div>
                 </div>
             </div>
 
@@ -137,80 +119,258 @@
                 </div>
             </div>
 
-            <div class="c-espacio"></div>
+            
 
-            <div class="c-titulo">
-                <h2 class="c-tituloDestacado">#Destinoaunclick</h2>
-            </div>
-
-            <div class="c-titulo">
-                <h1 class="c-h1">¿Por qué escoger Tiquete Ofertas?</h1>
-            </div>
-
-
-            <div class="c-beneficios">
-                <div>
-                    <img src="assets/img/ico-checkin.svg" alt="">
-                    <b><span>TO</span> hace tu check-in</b>
-                    <p>Puedes pedir con antelación las tarjetas de embarque a un solo toque, después nuestro equipo se
-                        encargará de realizar los check - in de manera inmediata a la apertura de vuelos, para luego
-                        enviar por correo tu tarjeta de embarque</p>
-                </div>
-
-                <div>
-                    <img src="assets/img/ico-seguridad.svg" alt="">
-                    <b>Pagos seguros</b>
-                    <p>Nuestra página web está creada para que realices tus pagos de manera segura y tranquila. Contamos
-                        con un sistema de seguridad en transacción que estará protegiéndote en tu proceso de compra.</p>
-                </div>
-
-                <div>
-                    <img src="assets/img/ico-ayuda.svg" alt="">
-                    <b>Ayuda en Línea</b>
-                    <p>No te estreses más por demoras, traemos un equipo dispuesto al 100% para resolver tus dudas por
-                        medio telefónico, la inmediatez, y la efectividad será algo que tendrás con nosotros. </p>
-                </div>
-
-                <div>
-                    <img src="assets/img/ico-clientes.svg" alt="">
-                    <b>+5.000 clientes</b>
-                    <p>Con el esfuerzo de nuestro equipo y por supuesto nuestro público, somos una familia cada vez es
-                        más grande, todos somos Tiquete Ofertas</p>
-                </div>
-            </div>
-
-
-            <div class="c-espacio"></div>
-
-            <div class="c-titulo">
-                <h2 class="c-tituloDestacado">#Destinoaunclick</h2>
-            </div>
-
-            <div class="c-titulo">
-                <h1 class="c-h1">Paquetes Populares</h1>
-            </div>
-
-
-            <!--https://glidejs.com/docs/options/-->
-            <div id="intro" class="glide" style="max-width: 1100px; margin: auto;">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides" id="slides">
-
-                    </ul>
-                </div>
-
-                <div data-glide-el="controls">
-                    <button data-glide-dir="<<">Start</button>
-                    <button data-glide-dir=">>">End</button>
-                    <button data-glide-dir="<">Back</button>
-                    <button data-glide-dir=">">Next</button>
-                </div>
-
-            </div>
 
         </div>
         <!--Fin mask-->
     </header>
+
+
+
+
+
+    <div class="c-espacio"></div>
+
+    <div class="c-titulo">
+        <h2 class="c-tituloDestacado">#Destinoaunclick</h2>
+    </div>
+
+    <div class="c-titulo">
+        <h1 class="c-h1">¿Por qué escoger Tiquete Ofertas?</h1>
+    </div>
+
+
+    <div class="c-beneficios">
+        <div>
+            <img src="assets/img/ico-checkin.svg" alt="">
+            <b><span>TO</span> hace tu check-in</b>
+            <p>Puedes pedir con antelación las tarjetas de embarque a un solo toque, después nuestro equipo se
+                encargará de realizar los check - in de manera inmediata a la apertura de vuelos, para luego
+                enviar por correo tu tarjeta de embarque</p>
+        </div>
+
+        <div>
+            <img src="assets/img/ico-seguridad.svg" alt="">
+            <b>Pagos seguros</b>
+            <p>Nuestra página web está creada para que realices tus pagos de manera segura y tranquila. Contamos
+                con un sistema de seguridad en transacción que estará protegiéndote en tu proceso de compra.</p>
+        </div>
+
+        <div>
+            <img src="assets/img/ico-ayuda.svg" alt="">
+            <b>Ayuda en Línea</b>
+            <p>No te estreses más por demoras, traemos un equipo dispuesto al 100% para resolver tus dudas por
+                medio telefónico, la inmediatez, y la efectividad será algo que tendrás con nosotros. </p>
+        </div>
+
+        <div>
+            <img src="assets/img/ico-clientes.svg" alt="">
+            <b>+5.000 clientes</b>
+            <p>Con el esfuerzo de nuestro equipo y por supuesto nuestro público, somos una familia cada vez es
+                más grande, todos somos Tiquete Ofertas</p>
+        </div>
+    </div>
+
+
+    <div class="c-espacio"></div>
+
+    <div class="c-titulo">
+        <h2 class="c-tituloDestacado">#Destinoaunclick</h2>
+    </div>
+
+    <div class="c-titulo">
+        <h1 class="c-h1">Paquetes Populares</h1>
+    </div>
+
+
+    <!--https://glidejs.com/docs/options/-->
+    <div id="intro" class="glide" style="max-width: 1100px; margin: auto;">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides" id="slides">
+                <div class="c-loading">
+                    <p>Estamos buscando nuestro mejores planes...</p>
+                </div>                       
+            </ul>
+
+            <div data-glide-el="controls">                    
+                <div class="c-back" data-glide-dir="<"><img src="assets/img/ico-back.svg" alt=""></div>
+                <div class="c-next" data-glide-dir=">"><img src="assets/img/ico-next.svg" ></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="c-newsletter">
+        <div class="c-newsletter-content">
+            <div class="c-newsletter-ico">
+                <img src="assets/img/newsletter.svg" alt="">
+            </div>
+            <div class="c-newsletter-title">
+                <h2>Recibe Primero</h2>
+                <span class="c-newsletter-tip">
+                    <li><img src="assets/img/ico-check.svg" alt="">Descuentos en viajes</li>
+                    <li><img src="assets/img/ico-check.svg" alt="">Codigos de descuento</li>
+                    <li><img src="assets/img/ico-check.svg" alt="">Ofertas Exclusivas</li>
+                </span>
+            </div>
+            <div class="c-newsletter-form">
+                <!-- insert this in head -->
+                <script src="https://cdn.fromdoppler.com/formgenerator/latest/vendor.js?7534876"></script>
+                <link rel="stylesheet" href="https://cdn.fromdoppler.com/formgenerator/latest/styles.css?7534876" />
+
+                <!-- insert this in body -->
+                <div data-dp-form="z2bpg%2fpzj4evvdGnF1Qy%2fg%3d%3d"></div>
+            </div>
+        </div>    
+    </div>
+
+
+
+    <div class="c-info-pagos">
+        <div class="c-pagos">
+            <h2>COMODIDAD EN TU PAGO</h2>
+            <section>
+                <img src="assets/img/baloto.png" alt="">
+                <span>Baloto</span>
+            </section>
+            <section>
+                <img src="assets/img/bancolombia.png" alt="">
+                <span>Bancolombia</span>
+            </section>
+            <section>
+                <img src="assets/img/codensa.png" alt="">
+                <span>Codensa</span>
+            </section>
+            <section>
+                <img src="assets/img/pse.png" alt="">
+                <span>PSE</span>
+            </section>
+            <section>
+                <img src="assets/img/tuya.png" alt="">
+                <span>Tuya</span>
+            </section>
+            <section>
+                <img src="assets/img/baloto.png" alt="">
+                <span>Baloto</span>
+            </section>
+        </div>
+        <div class="c-banner-sec">
+            <img src="assets/img/banner.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="c-fototeka">
+        <div class="c-fototeka-1">
+            <div class="c-fototeka-titulo">
+                @tiqueteofertas
+            </div>
+            <h2>FOTOS COMPARTIDAS POR CLIENTES</h2>
+            <div class="c-fototeka-item1">
+                <a href="#">
+                    <img src="assets/img/insta01.png" alt="">
+                </a>                        
+            </div>
+        </div>
+        <div class="c-fototeka-2">
+            <div class="c-fototeka-item2">
+                <a href="#">
+                    <img src="assets/img/insta02.png" alt="">
+                </a>   
+            </div>
+            <div class="c-fototeka-item3">
+                <a href="#">
+                    <img src="assets/img/insta03.png" alt="">
+                </a>   
+            </div>
+            <div class="c-fototeka-item4">
+                <a href="#">
+                    <img src="assets/img/insta04.png" alt="">
+                </a>   
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="c-footer">
+        <div class="c-footer-content">
+            <section class="c-footer-links">
+                <div class="c-footer-items">
+                    <b>Nosotros</b>
+                    <li><a href="#">¿Quiénes Somos? </a></li>
+                    <li><a href="#">¿Dónde estamos ubicados? </a></li>
+                    <li><a href="#">Somos marca registrada </a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                    <li><a href="#">Superintendencia de Industria y Comercio Aerocivil</a></li>
+                    
+
+                    <img src="assets/img/anato_logo_blanco 1.png" alt="">
+                    <img src="assets/img/logoIata.svg" alt="">
+                </div>
+
+                <div class="c-footer-items">
+                    <b>Politicas</b>
+                    <li><a href="#">Atención al Cliente </a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Ley de Protección al Consumidor </a></li>
+                    <li><a href="#">Ley de Retracto </a></li>
+                    <li><a href="#">Contra Explotación y abuso sexual de menores </a></li>
+                    <li><a href="#">Protección de datos </a></li>
+                    <li><a href="#">Decreto Número 2438/2010 </a></li>
+                    <li><a href="#">Normatividad Aéreas Civiles</a></li>
+                </div>
+
+                <div class="c-footer-items">
+                    <b>Contacto</b>
+                    <div class="c-footer-llamada">
+                        <a href="#">Llámanos (602) 4896798</a>
+                    </div>
+                    <li><a href="#">info@tiqueteofertas.com</a></li>
+                    <li><a href="#">Calle 23 Norte 3n-63 | B/Versalles Cali, Valle del Cauca - Colombia</a></li>
+                        
+                    <b>Siguenos</b>  
+                    <a href="#" class="ico-facebook"><img src="assets/img/ico-facebook.svg" alt=""></a>
+                    <a href="#" class="ico-instagram"><img src="assets/img/ico-insta.svg" alt=""></a>
+                    <a href="#" class="ico-youtube"><img src="assets/img/ico-youtube.svg" alt=""></a>
+                </div>   
+                
+                <div class="c-footer-items">
+                    <b>Horarios de Atención</b>
+                    <span>lunes a sábado 08:00am a 10:00pm Domingos y festivos 09:00am a 09:00pm</span><br>
+                    <b>Suscribete</b>
+                    <!-- insert this in head -->
+                    <script src="https://cdn.fromdoppler.com/formgenerator/latest/vendor.js?7534876"></script>
+                    <link rel="stylesheet" href="https://cdn.fromdoppler.com/formgenerator/latest/styles.css?7534876" />
+
+                    <!-- insert this in body -->
+                    <div data-dp-form="z2bpg%2fpzj4evvdGnF1Qy%2fg%3d%3d"></div>
+                </div>
+            </section>
+        </div>    
+    </div>
+
+    <section class="c-footer-copy">
+        <div class="c-footer-copy-content">
+            <div class="c-footer-copy-item">
+                <a href="#">Privacy Policy </a>
+                <a href="#">Term & Condition </a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="c-footer-copy-item">
+                <img src="assets/img/Tiquete_Ofertas_blanco.svg" alt="">
+            </div>
+            <div class="c-footer-copy-item">
+                <span>Copyright © 2022 Tiquete Ofertas. All rights reserveds</span>
+            </div>
+        </div>    
+    </section>
+
+
+
+
 
 
 </body>
