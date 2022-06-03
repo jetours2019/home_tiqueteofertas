@@ -117,10 +117,30 @@ function getSiteData() {
       var htmlResponse = "";
       json.forEach((resultado) => {
         if (resultado.name) {
-          var destino = resultado.attributes.filter(function (atributo) {
-            return atributo.name == "Ciudad destino" && atributo.visible;
+          var destino,
+            noches,
+            num_adultos = "";
+          ///////////////////////////////////////////////////////////////////////////////////////////////
+          //Borrar esto cuando se creen los atributos de los productos
+          destino = "...";
+          noches = "3";
+          num_adultos = "2";
+          ///////////////////////////////////////////////////////////////////////////////////////////////
+          resultado.attributes.forEach((atributo) => {
+            switch (atributo.name) {
+              case "Ciudad destino":
+                destino = atributo.options[0];
+                break;
+              case "Numero de noches":
+                noches = atributo.options[0];
+                break;
+              case "Numero de adultos":
+                num_adultos = atributo.options[0];
+                break;
+              default:
+                break;
+            }
           });
-          destino = destino[0] ? destino[0].options[0] : "...";
 
           htmlResponse += `
                 <li class="glide__slide">
@@ -130,8 +150,8 @@ function getSiteData() {
                     </div>
                     <img src="${resultado.images[0].src}" alt="">
                     <div class="c-side-attr">
-                        <div> <img src="./assets/img/ico-noches.svg" alt=""> <span>3 Noches</span></div>
-                        <div> <img src="./assets/img/ico-users.svg" alt=""> <span>2 Adultos</span></div>
+                        <div> <img src="./assets/img/ico-noches.svg" alt=""> <span>${noches} Noches</span></div>
+                        <div> <img src="./assets/img/ico-users.svg" alt=""> <span>${num_adultos} Adultos</span></div>
                         <div> <img src="./assets/img/ico-location.svg" alt=""> <span> ${destino} </span></div>
                     </div>
                     <div class="c-content-slide">
